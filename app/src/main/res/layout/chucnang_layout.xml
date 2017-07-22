@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnTinhLuongCalo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:shadowRadius="5"
+        android:shadowColor="#A8A8A8"
+        android:background="@drawable/buttoncustom"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:text="Tính Lượng Calo Cần"
+        android:textColor="#EEEEEE"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/btnThucDon"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:shadowRadius="5"
+        android:shadowColor="#A8A8A8"
+        android:background="@drawable/buttoncustom"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:text="Chọn Thực Đơn"
+        android:textColor="#EEEEEE"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/btnTinhLuongCalo"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/btnTinhBIM"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:shadowRadius="5"
+        android:shadowColor="#A8A8A8"
+        android:background="@drawable/buttoncustom"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:text="Tính BIM/BRM"
+        android:textColor="#EEEEEE"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/btnThucDon"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

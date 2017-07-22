@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/spnLuaChon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Spinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3366FF"
+        android:textColor="#000000"
+        android:text="Chiều Cao"
+        android:textAlignment="center"/>
+    <EditText
+        android:id="@+id/etChieuCao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3366FF"
+        android:textColor="#000000"
+        android:text="Cân nặng"
+        android:textAlignment="center"/>
+    <EditText
+        android:id="@+id/etCanNang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3366FF"
+        android:textColor="#000000"
+        android:text="Tuổi"
+        android:textAlignment="center"/>
+    <EditText
+        android:id="@+id/etTuoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Mức vận động:" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_it"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ít vận động hoặc vận động nhẹ"
+        android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_vuaPhai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vận động vừa phải"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_caoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vận động cao"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_voCungCao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vận động vô cùng cao"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Giới tính" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_nam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_nu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nữ"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnKetQuaAndroid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tính toán"
+        android:textAlignment="center"
+        android:background="@drawable/buttoncustom"/>
+    <TextView
+        android:id="@+id/txtKetQuaCaLo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

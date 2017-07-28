@@ -1,78 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#3366FF"
-        android:textColor="#000000"
-        android:text="Chiều Cao"
-        android:textAlignment="center"/>
+        android:text="Chiều Cao(cm)"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
     <EditText
         android:id="@+id/etChieuCaoBmi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"/>
+        android:inputType="number" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#3366FF"
-        android:textColor="#000000"
-        android:text="Cân nặng"
-        android:textAlignment="center"/>
+        android:text="Cân nặng(Kg)"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
     <EditText
         android:id="@+id/etCanNangBmi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"/>
+        android:inputType="number" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#3366FF"
-        android:textColor="#000000"
         android:text="Tuổi"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
     <EditText
         android:id="@+id/etTuoiBmi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"/>
+        android:inputType="number" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#000000"
-        android:text="Giới tính" />
+        android:text="Giới tính"
+        android:textColor="#000000" />
+
     <RadioGroup
+        android:id="@+id/rgNamNuBmi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <RadioButton android:id="@+id/radio_nam"
+
+        <RadioButton
+            android:id="@+id/radio_nam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nam"
-            android:onClick="onRadioButtonClicked"/>
-        <RadioButton android:id="@+id/radio_nu"
+            android:text="Nam" />
+
+        <RadioButton
+            android:id="@+id/radio_nu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nữ"
-            android:onClick="onRadioButtonClicked"/>
+            android:text="Nữ" />
     </RadioGroup>
+
     <Button
         android:id="@+id/btnKetQuaAndroid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/buttoncustom"
         android:text="Tính toán"
-        android:textAlignment="center"
-        android:background="@drawable/buttoncustom"/>
+        android:textAlignment="center" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#00FF00"
         android:text="Kết Luận"
-        android:textAlignment="center"
-        android:background="#00FF00"/>
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/txtXuatKT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center" />
 
 </LinearLayout>

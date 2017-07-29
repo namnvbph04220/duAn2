@@ -58,23 +58,19 @@
         <RadioButton android:id="@+id/radio_it"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ít vận động hoặc vận động nhẹ"
-        android:onClick="onRadioButtonClicked"/>
+        android:text="Ít vận động hoặc vận động nhẹ"/>
         <RadioButton android:id="@+id/radio_vuaPhai"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vận động vừa phải"
-            android:onClick="onRadioButtonClicked"/>
+            android:text="Vận động vừa phải"/>
         <RadioButton android:id="@+id/radio_caoi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vận động cao"
-            android:onClick="onRadioButtonClicked"/>
+            android:text="Vận động cao"/>
         <RadioButton android:id="@+id/radio_voCungCao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vận động vô cùng cao"
-            android:onClick="onRadioButtonClicked"/>
+            android:text="Vận động vô cùng cao"/>
     </RadioGroup>
     <TextView
         android:layout_width="wrap_content"
@@ -88,13 +84,11 @@
         <RadioButton android:id="@+id/radio_nam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nam"
-            android:onClick="onRadioButtonClicked"/>
+            android:text="Nam"/>
         <RadioButton android:id="@+id/radio_nu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nữ"
-            android:onClick="onRadioButtonClicked"/>
+            android:text="Nữ"/>
     </RadioGroup>
     <Button
         android:id="@+id/btnKetQuaAndroid"
@@ -104,8 +98,8 @@
         android:textAlignment="center"
         android:background="@drawable/buttoncustom"/>
     <TextView
-        android:id="@+id/txtKetQuaCaLo"
-        android:layout_width="wrap_content"
+        android:id="@+id/txtKaloHq"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
 </LinearLayout>

@@ -1,11 +1,11 @@
-package com.example.user.duan2.View.ManHinhChao;
+package com.example.user.duan2.View.manhinhchao;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.example.user.duan2.R;
-import com.example.user.duan2.View.TrangChu.TrangChuActivity;
+import com.example.user.duan2.View.trangchu.TrangChuActivity;
 
 /**
  * Created by User on 7/13/2017.

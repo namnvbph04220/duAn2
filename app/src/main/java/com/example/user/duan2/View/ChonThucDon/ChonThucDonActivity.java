@@ -1,4 +1,4 @@
-package com.example.user.duan2.View.ChonThucDon;
+package com.example.user.duan2.View.chonthucdon;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

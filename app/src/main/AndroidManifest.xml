@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".View.ManHinhChao.ManHinhChaoActivity"
+        <activity android:name=".View.manhinhchao.ManHinhChaoActivity"
             android:screenOrientation="portrait"
             >
             <intent-filter>
@@ -19,20 +19,20 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".View.TrangChu.TrangChuActivity"
+        <activity android:name=".View.trangchu.TrangChuActivity"
             android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name=".View.ChucNang.ChucNangActiviTy"
+        <activity android:name=".View.chucnang.ChucNangActiviTy"
             android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".View.TinhKaLo.TinhCaLoActivity"
+        <activity android:name=".View.tinhkalo.TinhCaLoActivity"
             android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".View.TinhBmi.TinhBmiActivity"
+        <activity android:name=".View.tinhbmi.TinhBmiActivity"
             android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".View.ChonThucDon.ChonThucDonActivity"
+        <activity android:name=".View.chonthucdon.ChonThucDonActivity"
             android:screenOrientation="portrait">
         </activity>
 

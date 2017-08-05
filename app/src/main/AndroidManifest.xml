@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.user.duan2">
+    package="com.example.user.myapplication">
 
     <application
         android:allowBackup="true"
@@ -10,32 +10,37 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".View.manhinhchao.ManHinhChaoActivity"
-            android:screenOrientation="portrait"
-            >
+        <activity
+            android:name=".View.manhinhchao.ManHinhChaoActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".View.trangchu.TrangChuActivity"
-            android:screenOrientation="portrait">
-        </activity>
+        <activity
+            android:name=".View.trangchu.TrangChuActivity"
+            android:screenOrientation="portrait"></activity>
 
-        <activity android:name=".View.chucnang.ChucNangActiviTy"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".View.tinhkalo.TinhCaLoActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".View.tinhbmi.TinhBmiActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".View.chonthucdon.ChonThucDonActivity"
-            android:screenOrientation="portrait">
-        </activity>
+        <activity
+            android:name=".View.chucnang.ChucNangActiviTy"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".View.tinhkalo.TinhCaLoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".View.tinhbmi.TinhBmiActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".View.chonthucdon.ChonThucDonActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".View.thucdon.ThucDonAct"
+            android:screenOrientation="portrait"></activity>
+
 
     </application>
+
 
 </manifest>

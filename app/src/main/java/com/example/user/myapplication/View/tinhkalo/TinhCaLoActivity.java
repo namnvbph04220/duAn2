@@ -56,11 +56,12 @@ public class TinhCaLoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int i = spnLuaChon.getSelectedItemPosition();
-                double chieuCao = Double.valueOf(etChieuCao.getText().toString());
-                double canNang = Double.valueOf(etCanNang.getText().toString());
-                double tuoi = Double.valueOf(etTuoi.getText().toString());
-                if (etCanNang.getText().toString() != null && etChieuCao.getText().toString() != null &&
-                        etTuoi.getText().toString() != null) {
+                if (etCanNang.getText().toString().trim().length() > 0 && etChieuCao.getText().toString().trim().length() > 0 &&
+                        etTuoi.getText().toString().trim().length() > 0) {
+                    double chieuCao = Double.valueOf(etChieuCao.getText().toString());
+                    double canNang = Double.valueOf(etCanNang.getText().toString());
+                    double tuoi = Double.valueOf(etTuoi.getText().toString());
+
                     if (radio_nam.isChecked()) {
                         ketqua = 66 + (13.7 * canNang) + (5 * chieuCao) + (6.8 * tuoi);
                     } else if (radio_nu.isChecked()) {
@@ -84,22 +85,21 @@ public class TinhCaLoActivity extends AppCompatActivity {
                     if (kaloCan != -1) {
                         switch (i) {
                             case 0:
-                                kqx = "Bạn cần " + kaloCan + " để duy trì cân lặng";
+                                kqx = "Bạn cần " + kaloCan + "calo để duy trì cân lặng";
                                 break;
                             case 1:
-                                kqx = "Bạn cần " + (kaloCan + 500) + " để tăng 0.5kg trên 1 tuần";
+                                kqx = "Bạn cần " + (kaloCan + 500) + "calo để tăng 0.5kg trên 1 tuần";
                                 break;
                             case 2:
-                                kqx = "Bạn cần " + (kaloCan - 500) + " để giảm 0.5kg trên 1 tuần";
+                                kqx = "Bạn cần " + (kaloCan - 500) + "calo để giảm 0.5kg trên 1 tuần";
                                 break;
                         }
                     }
                     Toast.makeText(TinhCaLoActivity.this, kqx, Toast.LENGTH_SHORT).show();
                     txtKaloHq.setText(kqx);
-                } else {
-                    Toast.makeText(TinhCaLoActivity.this, "Nhập thông tin", Toast.LENGTH_SHORT).show();
+                }else {
+                    Toast.makeText(TinhCaLoActivity.this,"Nhập thông tin", Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
 
